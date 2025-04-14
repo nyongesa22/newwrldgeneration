@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for your website -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>New Generation</title>
+
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Reference to the CSS file for styles -->
+
+    <!-- Inline styles if needed for background image or other elements -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background: url('image.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #333;
+        }
+        .container { 
+            width: 50%; 
+            margin: auto; 
+            padding: 20px; 
+            background: white; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px;
+        }
+        input, select, button, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .engineer-list {
+            margin-top: 20px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+        .engineer {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #555;
+        }
+        .map-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Generation - Order an Electrical Engineer</h1>
+    
+    <div class="container">
+        <form id="serviceForm" action="https://formsubmit.co/simiyunyongesa8022@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="location" placeholder="Your Location" required>
+            
+            <!-- Mobile Number Input -->
+            <input type="tel" name="mobile" placeholder="Your Mobile Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+
+            <select name="service" required>
+                <option value="">Select Service</option>
+                <option value="Repair">Repair</option>
+                <option value="Solar Installation">Solar Installation</option>
+                <option value="Electrical Installation">Electrical Installation</option>
+                <option value="CCTV Installation">CCTV Installation</option>
+                <option value="Electric Fence Installation">Electric Fence Installation</option>
+            </select>
+            <textarea name="map_location" placeholder="Paste Google Maps location link here" required></textarea>
+            <button type="submit">Request Service</button>
+        </form>
+        <p id="response"></p>
+    </div>
+    
+    <h2>Available Engineers</h2>
+    <div class="engineer-list">
+        <div class="engineer">
+            <h3>Engineer Ismael</h3>
+            <p>Specialty: Solar Installation</p>
+            <p>Location: Nakuru</p>
+        </div>
+        <div class="engineer">
+            <h3>Engineer George</h3>
+            <p>Specialty: Electrical Installation</p>
+            <p>Location: Nakuru</p>
+        </div>
+        <div class="engineer">
+            <h3>Engineer Brian</h3>
+            <p>Specialty: CCTV Installation</p>
+            <p>Location: Nakuru</p>
+        </div>
+        <div class="engineer">
+            <h3>Engineer Mutua</h3>
+            <p>Specialty: Electric Fence Installation</p>
+            <p>Location: Nakuru</p>
+        </div>
+    </div>
+    
+    <h2>Contact Us</h2>
+    <p>Mobile Service Number: 0115371934</p>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
