@@ -1,0 +1,15 @@
+body {
+  background-image: url('images/image.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the image in place while scrolling */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensures the background covers the entire height */
+}
+
+h1 {
+  text-align: center;
+  color: white; /* Make sure text stands out */
+  padding-top: 50px;
+}
